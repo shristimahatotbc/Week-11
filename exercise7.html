@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <table align="center" id="Table" style="border: 1px white;" cellpadding="10px"width="450px" >
+        <th>S.N.</th>
+        <th>Name</th>
+        <th>Image</th>
+        </th>
+        <tr bgcolor="#D1DEDE" align="center"> 
+            <td>1</td>
+            <td>Name 1 </td>
+            <td> 1.jpg </td>
+        </tr>
+        <tr align="center">
+            <td> 2 </td>
+            <td> Name 2 </td>
+            <td> 2.jpg </td>
+        </tr>
+        <tr bgcolor="#D1DEDE" align="center">
+            <td> 3 </td>
+            <td> Name 3 </td>
+            <td> 3.jpg </td>
+        </tr>
+        <tr align="center">
+            <td> 4 </td>
+            <td> Name 4 </td>
+            <td> 4.jpg </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        var table = document.getElementById("Table");
+        if (table != null) 
+        {
+            if (table.rows[0] != null) 
+            {
+                table.rows[0].style.backgroundColor = "#0088A1";
+                table.rows[0].style.color = "white";
+            }
+            for (var i = 2; i < table.rows.length; i++) 
+            {
+                if (i % 2 == 0)
+                    table.rows[i].style.backgroundColor = "#D6ECF0";
+            }
+        }
+    </script>
+</body>
+</html>
